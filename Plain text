@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Career Mentor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<h1>Contact Me</h1>
+<div class="container">
+    <h1>Contact Us</h1>
 
-<form>
-    <p>
-        <label>Name:</label><br>
-        <input type="text" placeholder="Enter your name">
-    </p>
+    <form>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
 
-    <p>
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email">
-    </p>
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
 
-    <p>
-        <label>Message:</label><br>
-        <textarea rows="5" cols="30" placeholder="Write your message"></textarea>
-    </p>
+        <label>Message</label><br>
+        <textarea rows="5" placeholder="Enter your message"></textarea><br><br>
 
-    <button type="submit">Send</button>
-</form>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2026 AI Career Mentor | Created by Raj Chauhan</p>
+</footer>
 
 </body>
 </html>
