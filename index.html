@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>AI Career Mentor for Students</title>
     <link rel="stylesheet" href="style.css">
-    <title>AI Career Mentor</title>
 </head>
 <body>
-    <h1>Welcome to AI Career Mentor for Students</h1>
-    <p>This website helps students choose the right career.</p>
 
-    <h2>Enter Your Name</h2>
-    <input type="text" id="name" placeholder="Enter your name">
-    <button onclick="welcome()">Submit</button>
+<h1>🎓 AI Career Mentor for Students</h1>
 
-    <p id="result"></p>
+<p>Welcome! Find the best career based on your interests and skills.</p>
 
-    <script src="script.js"></script>
+<h2>Enter Your Name</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<button onclick="welcome()">Start</button>
+
+<h2>Select Your Interest</h2>
+
+<select id="interest">
+    <option>Engineering</option>
+    <option>Medical</option>
+    <option>Commerce</option>
+    <option>Arts</option>
+    <option>Cyber Security</option>
+</select>
+
+<br><br>
+
+<button onclick="career()">Get Career Suggestion</button>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+
 </body>
 </html>
