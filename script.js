@@ -1,25 +1,29 @@
 function welcome() {
     let name = document.getElementById("name").value;
-    document.getElementById("result").innerHTML =
-    "Welcome " + name + "!";
+
+    if (name === "") {
+        alert("Please enter your name.");
+    } else {
+        alert("Welcome " + name + "!");
+    }
 }
 
 function career() {
     let interest = document.getElementById("interest").value;
+    let result = "";
 
-    if (interest == "Engineering") {
-        document.getElementById("result").innerHTML = "Best Career: Software Engineer";
+    if (interest === "Engineering") {
+        result = "Suggested Career: Software Engineer";
+    } else if (interest === "Medical") {
+        result = "Suggested Career: Doctor";
+    } else if (interest === "Commerce") {
+        result = "Suggested Career: Chartered Accountant";
+    } else if (interest === "Arts") {
+        result = "Suggested Career: Graphic Designer";
+    } else if (interest === "Cyber Security") {
+        result = "Suggested Career: Cyber Security Analyst";
     }
-    else if (interest == "Medical") {
-        document.getElementById("result").innerHTML = "Best Career: Doctor";
-    }
-    else if (interest == "Commerce") {
-        document.getElementById("result").innerHTML = "Best Career: Chartered Accountant";
-    }
-    else if (interest == "Arts") {
-        document.getElementById("result").innerHTML = "Best Career: Graphic Designer";
-    }
-    else if (interest == "Cyber Security") {
-        document.getElementById("result").innerHTML = "Best Career: Cyber Security Analyst";
-    }
+
+    document.getElementById("result").innerHTML = result;
 }
+
