@@ -151,3 +151,53 @@ if (menuToggle && navLinks) {
         navLinks.classList.toggle("active");
     });
 }
+
+// ===========================
+// Welcome Function
+// ===========================
+
+function welcome(){
+    let name = document.getElementById("name").value;
+
+    if(name==""){
+        alert("Please enter your name");
+    }
+    else{
+        alert("Welcome " + name + " 🎓");
+    }
+}
+
+
+// ===========================
+// Career Suggestion
+// ===========================
+
+function career(){
+
+    let interest = document.getElementById("interest").value;
+    let result = document.getElementById("result");
+
+    if(interest=="Engineering"){
+        result.innerHTML="You can explore Software Engineering, AI, Cyber Security and more 🚀";
+    }
+
+    else if(interest=="Medical"){
+        result.innerHTML="You can explore Doctor, Nursing and Healthcare fields 🏥";
+    }
+
+    else if(interest=="Commerce"){
+        result.innerHTML="You can explore Finance, Business and Accounting fields 💼";
+    }
+
+    else if(interest=="Arts"){
+        result.innerHTML="You can explore Design, Media and Creative careers 🎨";
+    }
+
+    else if(interest=="Cyber Security"){
+        result.innerHTML="You can explore Ethical Hacking, Security Analyst and Cyber Expert roles 🔐";
+    }
+
+    else{
+        result.innerHTML="Please select your interest";
+    }
+}
