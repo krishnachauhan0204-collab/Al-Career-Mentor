@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Career Quiz | AI Career Mentor</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🎓 AI Career Mentor
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="quiz.html">Career Quiz</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+
+<a href="careers.html" class="btn">Career Library</a>
+
+</nav>
+
+</header>
+
+<section class="features">
+
+<h2>Career Interest Quiz</h2>
+
+<p>
+Answer all the questions honestly to discover the career path that matches your interests.
+</p>
+
+<form id="careerQuiz">
+
+<label>1. Which subject do you enjoy the most?</label>
+
+<select id="q1" required>
+<option value="">Select</option>
+<option value="engineering">Mathematics</option>
+<option value="cyber">Computer Science</option>
+<option value="medical">Biology</option>
+<option value="commerce">Commerce</option>
+<option value="arts">Arts</option>
+</select>
+
+<label>2. What type of work do you like?</label>
+
+<select id="q2" required>
+<option value="">Select</option>
+<option value="engineering">Problem Solving</option>
+<option value="cyber">Programming</option>
+<option value="medical">Helping People</option>
+<option value="commerce">Business Management</option>
+<option value="arts">Creative Designing</option>
+</select>
+
+<label>3. Which place would you like to work?</label>
+
+<select id="q3" required>
+<option value="">Select</option>
+<option value="engineering">Technology Company</option>
+<option value="cyber">Cyber Security Lab</option>
+<option value="medical">Hospital</option>
+<option value="commerce">Corporate Office</option>
+<option value="arts">Design Studio</option>
+</select>
+<label>4. Do you enjoy coding?</label>
+
+<select id="q4" required>
+<option value="">Select</option>
+<option value="cyber">Yes, I love coding</option>
+<option value="engineering">Sometimes</option>
+<option value="commerce">A little</option>
+<option value="medical">No</option>
+<option value="arts">Not interested</option>
+</select>
+
+<label>5. Which skill describes you best?</label>
+
+<select id="q5" required>
+<option value="">Select</option>
+<option value="engineering">Logical Thinking</option>
+<option value="cyber">Analytical Skills</option>
+<option value="medical">Caring Nature</option>
+<option value="commerce">Leadership</option>
+<option value="arts">Creativity</option>
+</select>
+
+<label>6. Which technology interests you the most?</label>
+
+<select id="q6" required>
+<option value="">Select</option>
+<option value="engineering">Robotics</option>
+<option value="cyber">Cyber Security</option>
+<option value="medical">Medical Technology</option>
+<option value="commerce">FinTech</option>
+<option value="arts">Graphic Design</option>
+</select>
+
+<label>7. What motivates you the most?</label>
+
+<select id="q7" required>
+<option value="">Select</option>
+<option value="engineering">Building New Things</option>
+<option value="cyber">Protecting Systems</option>
+<option value="medical">Helping People</option>
+<option value="commerce">Growing a Business</option>
+<option value="arts">Creating Amazing Designs</option>
+</select>
+<label>8. Which activity do you enjoy most?</label>
+
+<select id="q8" required>
+<option value="">Select</option>
+<option value="engineering">Building Projects</option>
+<option value="cyber">Finding Security Issues</option>
+<option value="medical">Taking Care of People</option>
+<option value="commerce">Managing Money</option>
+<option value="arts">Drawing & Designing</option>
+</select>
+
+<label>9. What is your dream career?</label>
+
+<select id="q9" required>
+<option value="">Select</option>
+<option value="engineering">Software Engineer</option>
+<option value="cyber">Ethical Hacker</option>
+<option value="medical">Doctor</option>
+<option value="commerce">Chartered Accountant</option>
+<option value="arts">Graphic Designer</option>
+</select>
+
+<label>10. Which environment do you prefer?</label>
+
+<select id="q10" required>
+<option value="">Select</option>
+<option value="engineering">Technology Lab</option>
+<option value="cyber">Security Operations Center</option>
+<option value="medical">Hospital</option>
+<option value="commerce">Corporate Office</option>
+<option value="arts">Creative Studio</option>
+</select>
+
+<br><br>
+
+<button type="button" class="hero-btn" onclick="showResult()">
+Submit Quiz
+</button>
+
+</form>
+
+<div id="result" class="card" style="display:none; margin-top:30px;">
+<h3>Your Career Result</h3>
+<p id="careerResult"></p>
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<h3>🎓 AI Career Mentor</h3>
+
+<p>Helping students choose the right career with confidence.</p>
+
+<p>Created by Krishna Chauhan</p>
+
+<p>© 2026 AI Career Mentor. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
